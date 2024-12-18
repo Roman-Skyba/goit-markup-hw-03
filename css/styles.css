@@ -1,5 +1,3 @@
-/* font-family: "Raleway", serif;
-font-family: "Roboto", sans-serif; */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -126,8 +124,10 @@ a {
   background-color: #2e2f42;
   padding: 188px 0;
 }
+.hero .container {
+  padding-top: 188px;
+}
 .hero-descr {
-  display: flex;
 }
 .hero-title {
   font-weight: 700;
@@ -137,7 +137,7 @@ a {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   display: block;
 }
 .hero-button {
@@ -153,9 +153,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -163,52 +161,43 @@ a {
   background-color: #404bbf;
 }
 
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+.benefits-item {
+  width: calc((100% - 72px) / 4);
+}
 .function {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  margin-bottom: 8px;
 }
 .descr-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
-.function {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+/* section-3 */
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.descr-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+.team-item {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
-
-.function {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.team-container {
+  display: flex;
 }
-.descr-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+.team-des {
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .function {
   font-weight: 500;
   font-size: 20px;
@@ -225,6 +214,9 @@ a {
 }
 
 .team-section {
+  display: flex;
+  justify-content: center;
+
   background-color: #f4f4fd;
 }
 .team-des {
@@ -262,48 +254,11 @@ a {
   text-align: center;
   color: #2e2f42;
 }
-.team-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #434455;
-}
-.team-h {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
-.team-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #434455;
-}
-.team-h {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
-.team-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #434455;
-}
+
 .team-img {
   background-color: #ffffff;
+
+  /* section-4 */
 }
 .portfolio {
   font-weight: 700;
@@ -314,19 +269,13 @@ a {
   color: #2e2f42;
   text-transform: capitalize;
 }
-.portfolio-h {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+.portfolio-list {
+  display: block;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
-.otions {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-h {
   font-weight: 500;
@@ -342,7 +291,21 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.portfolio-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.otions {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+/* footer */
 .footer-page {
   background-color: #2e2f42;
 }
