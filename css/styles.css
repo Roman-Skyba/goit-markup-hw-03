@@ -30,6 +30,9 @@ a {
   padding-right: 15px;
   margin: 0 auto;
 }
+img {
+  display: block;
+}
 
 .visually-hidden {
   position: absolute;
@@ -163,12 +166,16 @@ a {
   color: #fff;
   background-color: #404bbf;
 }
-
+/* section-2 */
 .benefits {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -176,7 +183,6 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -206,7 +212,7 @@ a {
   display: flex;
   gap: 24px;
 }
-.team-container {
+.container {
   max-width: 1158px;
   padding: 0 15px;
 }
@@ -234,6 +240,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  gap: 24px;
 }
 
 .team-section {
@@ -251,7 +259,8 @@ a {
   color: #2e2f42;
 }
 .descr-card {
-  margin: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-h {
